@@ -1,5 +1,5 @@
 * {
-	border: 1px blue dashed;
+	/* border: 1px blue dashed; */
 	box-sizing: border-box;
 }
 
@@ -25,26 +25,36 @@ body {
 	font-family: 'Helvetica Neue';
 }
 
+/* Cancel the header margin on home page. */
+body#home header {
+  margin-bottom: 0;
+}
+
+header . {
+  margin-bottom: 0;
+}
+
 a {
 	text-decoration: none;
 	color: #9a9a9a;
-	
-	&:active {
-		color: #9a9a9a;
-	}
-	&:hover {
-		color: #ff0000;
-	}
-	&:visited {
-		color: #9a9a9a;
-	}
+}
+
+header {
+  background: #d8d8d8;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px #c5c5c5 solid;
 }
 
 .navbar {
 	text-decoration: none;
 	background-color: #d8d8d8;
-	border-bottom: 2px #c5c5c5 solid;
+	
 	padding: 10px 55px 10px 55px;
+}
+
+.nav {
+	float: right;
 }
 
 div.logo {
@@ -52,8 +62,10 @@ div.logo {
 	width: 55px;
 	border-radius: 50%;
 	color: #fff;
-	font-size: 1rem;
+	font-size: .6rem;
+	text-align: center;
 	background-color: #9a9a9a;
+	float: left;
 }
 
 .hero {
@@ -62,27 +74,38 @@ div.logo {
 	color: #8a8b8c;
 }
 
-div div h2 {
+.hero h1 {
+	padding: 100px;
+}
+
+h2 {
 	color: #bebebe;
 }
 
-div div p {
+p {
 	color: #000;
 }
 
-col {
-	padding: 40px 50px 40px 40px;
+.col {
+  	width: 90%;
+  	max-width: 800px;
+  	margin: 0 auto 20px;
 }
 
-col one {
+.one {
 	float: left;
+	width: 50%;
+	padding: 20px;
 }
 
-col two {
+.two {
 	float: right;
+	width: 50%;
+	padding: 20px;
+	border-left: 1px #b5b5b5 solid;
 }
 
-.footer {
+footer {
 	padding: 20px 10px 10px 15px;
 	text-align: center;
 	font-size: .6rem;
